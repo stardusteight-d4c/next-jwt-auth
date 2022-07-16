@@ -35,22 +35,6 @@ export default function Example() {
               </div>
               <div className="flex items-center justify-center flex-1 sm:items-stretch sm:justify-start">
                 <div className="flex items-center flex-shrink-0">
-                  <div className="block w-auto h-8 lg:hidden">
-                    <Image
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                      alt="Workflow"
-                      width={32}
-                      height={32}
-                    />
-                  </div>
-                  <div className="hidden w-auto h-8 lg:block">
-                    <Image
-                      src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-                      alt="Workflow"
-                      width={32}
-                      height={32}
-                    />
-                  </div>
                 </div>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
