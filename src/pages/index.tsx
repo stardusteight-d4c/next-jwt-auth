@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Image from 'next/image'
 import { AiFillLock } from 'react-icons/ai'
 
 import { useForm } from 'react-hook-form'
+import { AuthContext } from '../contexts/AuthContext'
 
 export default function Home() {
   const { register, handleSubmit } = useForm()
+  const { signIn } = useContext(AuthContext)
 
-  function handleSignIn(data) {
-    console.log(data)
+  async function handleSignIn(data) {
+    await signIn(data)
   }
 
   return (
